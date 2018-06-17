@@ -21,7 +21,6 @@ void MyScene::Init()
     textures[2] = GetTexture("./Resources/Skybox/right.bmp");
     textures[3] = GetTexture("./Resources/Skybox/back.bmp");
     textures[4] = GetTexture("./Resources/Skybox/top.bmp");
-    textures[5] = NULL; // no bottom texture
     AddObjectToScene(new Skybox((float)skybox_size,textures));
 
     // load textures

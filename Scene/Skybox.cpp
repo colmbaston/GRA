@@ -75,21 +75,6 @@ void Skybox::Draw()
         glTexCoord2f(1.f,0.f);
         glVertex3f(+size,+size,-size);
     glEnd();
-    // bottom (if there is one)
-    if (textures[5] != NULL)
-    {
-        glBindTexture(GL_TEXTURE_2D,textures[5]);
-        glBegin(GL_QUADS);
-            glTexCoord2f(1.f,1.f);
-            glVertex3f(+size,-size,-size);
-            glTexCoord2f(0.f,1.f);
-            glVertex3f(-size,-size,-size);
-            glTexCoord2f(0.f,0.f);
-            glVertex3f(-size,-size,+size);
-            glTexCoord2f(1.f,0.f);
-            glVertex3f(+size,-size,+size);
-        glEnd();
-    }
 
     glDisable(GL_TEXTURE_2D);
     glEnable(GL_LIGHTING);
