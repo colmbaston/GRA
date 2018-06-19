@@ -20,5 +20,4 @@ Requires linking with external GL, GLU, and GLUT libraries:
 
 ![Scene](./Screenshots/Scene.png)
 ![Particles](./Screenshots/Particles.png)
-![Front](./Screenshots/Front.png)
 ![Wingspan](./Screenshots/Wingspan.png)
