@@ -28,4 +28,5 @@ private:
     float delay,delay_min,delay_max;
     float v_acceleration;
     float v_reset;
+    bool  isReset;
 };

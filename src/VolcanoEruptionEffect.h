@@ -44,5 +44,5 @@ public:
 
 protected:
     int keyPressed,last_keyPressed;
-    bool erupting,isReset;
+    bool erupting;
 };

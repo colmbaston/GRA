@@ -30,19 +30,19 @@ void VolcanoParticle::Reset()
     // give each particle a random colour
     switch (rand() % 3)
     {
-    case 0:
+      case 0:
         // red
         colour[0] = 255/(float)255;
         colour[1] = 0  /(float)255;
         colour[2] = 0  /(float)255;
         break;
-    case 1:
+      case 1:
         // dark orange
         colour[0] = 255/(float)255;
         colour[1] = 60 /(float)255;
         colour[2] = 0  /(float)255;
         break;
-    case 2:
+      case 2:
         // light orange
         colour[0] = 255/(float)255;
         colour[1] = 120/(float)255;
@@ -57,14 +57,6 @@ void VolcanoParticle::Reset()
 // draws particles
 void VolcanoParticle::Draw()
 {
-    // only draw if erupting is true, or particle hasn't been reset
-    // this allows particles to finish their animations even if the volcano isn't erupting anymore
-    // I.e. no new particles are spawned, but currently active ones still persist until they're reset
-    if (isReset)
-    {
-        return;
-    }
-
     // these particles are simply coloured, billboarded squares
     Billboard();
     glColor4f(colour[0],colour[1],colour[2],colour[3]);
